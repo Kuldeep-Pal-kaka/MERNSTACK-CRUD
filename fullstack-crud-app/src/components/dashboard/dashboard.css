@@ -1,0 +1,83 @@
+/* Center and style the dashboard */
+.dashboard-container {
+  background-color: #112240; /* Dark blue background */
+  color: #64ffda;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 90%;
+  margin: 40px auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #64ffda;
+  margin-bottom: 20px;
+}
+
+/* Table Styling */
+.table {
+  background-color: #0a192f;
+  color: #64ffda;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.table th {
+  background-color: #112240;
+  color: #64ffda;
+  font-size: 1.2rem;
+  padding: 12px;
+}
+
+.table td {
+  padding: 10px;
+  color: white;
+}
+
+.table tbody tr:hover {
+  background-color: #112240;
+  transition: 0.3s;
+}
+
+/* Actions Column */
+.actions {
+  text-align: center;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.buttons button {
+  background-color: #112240;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color:  #52e0c4;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #52e0c4;
+  color: #0a192f;
+}
+
+
+.no-data-message {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #64ffda;
+  margin-top: 20px;
+}

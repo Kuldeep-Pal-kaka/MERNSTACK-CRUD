@@ -46,9 +46,9 @@ async updateUser(req, res) {
   const updatedData = req.body;
 
   try {
-    // Corrected method: Use updateUser instead of getUserById
+    
     const updatedUser = await userServices.updateUser(userId, updatedData);
-console.log(updatedData);
+        console.log("the user details updated",updatedData);
 
     if (!updatedUser) {
       return res.status(404).json({ error: "User not found" });
@@ -58,6 +58,21 @@ console.log(updatedData);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
+}
+
+
+async deleteUser(req , res){
+  const userId = req.params.id;
+try {
+ const deletedUser = await userServices.deleteUser(userId);
+if (!deletedUser) {
+  return res.status(404).json({error: "user not found"});
+}else{
+  res.json({message: "User deleted successfully" , user: deletedUser});
+}
+} catch (error) {
+  res.status(500).json({error: error.message});
+}
 }
 
 

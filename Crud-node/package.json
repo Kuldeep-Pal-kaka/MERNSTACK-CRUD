@@ -9,7 +9,7 @@
     "dev": "nodemon src/app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kuldeep Pal",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.3",

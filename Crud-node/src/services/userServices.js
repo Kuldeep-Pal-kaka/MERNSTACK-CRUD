@@ -24,6 +24,11 @@ class UserServices {
       { new: true, runValidators: true } // Return updated user & validate schema
     );
   }
+
+  async deleteUser(userId) {
+    return await User.findByIdAndDelete(userId);
+  }
+  
   
 
 };

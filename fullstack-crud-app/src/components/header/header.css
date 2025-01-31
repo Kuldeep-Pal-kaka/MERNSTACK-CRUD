@@ -1,3 +1,50 @@
-.ml-auto .nav-links{
-  color: azure;
+/* Navbar Background */
+.custom-navbar {
+  height: 80px;
+  background-color: #0a192f;
+  padding: 15px 20px;
+}
+
+/* Navbar Brand */
+.logo {
+  font-size: 1.5rem;
+  flex: 10;
+  font-weight: bold;
+  color: #64ffda!important;
+}
+/* 
+.links{
+  flex: 1;
+} */
+
+/* Navbar Links */
+.nav-links {
+  font-size: 1.2rem;
+  color: #64ffda!important;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+/* Navbar Links Hover Effect */
+.nav-links:hover {
+  color: #64ffda !important; /* Neon green */
+  text-decoration: underline;
+}
+
+/* Navbar Collapse for Mobile */
+.navbar-toggler {
+  border-color: white !important;
+}
+
+.navbar-toggler-icon {
+  background-color: white !important;
+}
+
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-navbar {
+  background-color: #222 !important;
 }
